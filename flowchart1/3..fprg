@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 03:54:47 PM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtQThFOUwxRFU7MjAyMy0wMy0wNzswODo1NzozMiBQTTsyNjAz"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtQThFOUwxRFU7MjAyMy0wMy0wOTswMzo1NDo0NyBQTTsxMjsyNzYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, max" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="a" type="Integer" array="True" size="4"/>
+            <while expression="i&lt;4">
+                <output expression="&quot;masukkna nilai&quot;" newline="True"/>
+                <input variable="a[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <assign variable="max" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;4">
+                <if expression="a[i]&gt;max">
+                    <then>
+                        <assign variable="max" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

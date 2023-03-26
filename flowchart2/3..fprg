@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-09 09:26:24 PM"/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtQThFOUwxRFU7MjAyMy0wMy0wOTswNDoxMzowOCBQTTsyNTk2"/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtQThFOUwxRFU7MjAyMy0wMy0wOTswOToyNjoyNCBQTTsxOzI3MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, b, swap" type="Integer" array="False" size=""/>
+            <declare name="angka" type="Integer" array="True" size="4"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;masukkan bilangan ke-&quot;&amp; i+1" newline="True"/>
+                <input variable="angka[i]"/>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <for variable="b" start="i+1" end="3" direction="inc" step="1">
+                    <if expression="angka[i]&gt;angka[b]">
+                        <then>
+                            <assign variable="swap" expression="angka[i]"/>
+                            <assign variable="angka[i]" expression="angka[b]"/>
+                            <assign variable="angka[b]" expression="swap"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="angka[0] &amp; angka[1] &amp; angka[2]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
